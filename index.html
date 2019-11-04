@@ -13,7 +13,7 @@ img {
   margin: auto;
 }
 
-a {
+.button {
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
@@ -23,13 +23,19 @@ a {
   line-height: 50px;
   height: 50px;
   padding: 0 25px 0 25px;
-  font-size: 1rem;
   color: white;
   margin: 0;
   background-color: black;
   text-align: center;
   border-radius: 4px;
   font-size: 16px;
+}
+
+.pp {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgb(102,102,102);
+  font-size: 14px;
 }
 
 p {
@@ -67,7 +73,10 @@ h1 {
   <h1>Drively</h1>
   <p>Delightful file explorer for Google Drive</p>
   <div style="text-align: center">
-    <a href="https://chrome.google.com/webstore/detail/drively/omhjnndndkjaakonjnggfjmabcllppbl">Install for Google Chrome</a>
+    <a class="button" href="https://chrome.google.com/webstore/detail/drively/omhjnndndkjaakonjnggfjmabcllppbl">Install for Google Chrome</a>
+  </div>
+  <div style="text-align: center; margin-top: 4px;">
+    <a class="pp" target="_blank" href="privacy">Privacy Policy</a>
   </div>
   </div>
 </body>
