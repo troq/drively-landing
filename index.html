@@ -65,19 +65,116 @@ h1 {
   margin-bottom: 0;
 }
 
+section {
+  max-width: 100%;
+  color: black;
+  padding: 80px 30px;
+  border-top: 1px solid rgb(234, 234, 234);
+}
+
+h2 {
+  text-align: center;
+  line-height: 1.1em;
+  font-weight: 700;
+  font-size: 3.5rem;
+  letter-spacing: -0.049375rem;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 900px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.faq {
+  max-width: 100%;
+  width: 650px;
+  margin: 60px auto 0px;
+}
+
+.qa {
+  text-align: left;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-top: 1px solid rgb(234, 234, 234);
+}
+
+.qa h3 {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  letter-spacing: -0.029365rem;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.qa > div {
+  font-size: 16px;
+  line-height: 26px;
+  color: black;
+}
+
+.qa p {
+  color: black;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.qa a {
+  text-decoration: none;
+  color: #0070f3;
+}
+
+.qa a:hover {
+  text-decoration: underline;
+}
+
 </style>
 
 </head>
 <body>
+  <div style="position: relative; height: 75vh;">
   <div class="container">
   <h1>Drively</h1>
   <p>Delightful file explorer for Google Drive</p>
   <div style="text-align: center">
-    <a class="button" href="https://chrome.google.com/webstore/detail/drively/omhjnndndkjaakonjnggfjmabcllppbl">Install for Google Chrome</a>
+    <a class="button" rel="noopener noreferrer" href="https://chrome.google.com/webstore/detail/drively/omhjnndndkjaakonjnggfjmabcllppbl">Install for Google Chrome</a>
   </div>
   <div style="text-align: center; margin-top: 4px;">
     <a class="pp" target="_blank" href="privacy">Privacy Policy</a>
   </div>
   </div>
+  </div>
+  <section>
+    <div class="wrapper">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <div class="qa">
+          <h3>What does Drively do?</h3>
+          <div>
+            <p>Drively is a Chrome extension that provides an improved file explorer for Google Drive.</p><p> Here are the features of Drively:</p>
+            <ul>
+              <li>Browse and open files in one click</li>
+              <li>Quickly create Docs, Sheets, Slides, Forms, and Folders in any location (My Drive, subfolders, etc)</li>
+              <li>Right click any file/folder to copy its address or trash it</li>
+            </ul>
+            <p>You can open Drively by clicking on the extension icon, or by using the keyboard shortcut CTRL-D (configurable).</p>
+          </div>
+        </div>
+        <div class="qa">
+          <h3>How does Drively use personal data?</h3>
+          <div>
+            <p>Drively uses the <a target="_blank" rel="noopener noreferrer" href="https://developer.chrome.com/apps/identity">chrome.identity</a> API to get OAuth2 access tokens for your Google Drive. Your browser caches the OAuth2 token in memory. The token is never sent to a server or otherwise saved by the extension.</p>
+            <p>Using the OAuth2 token, Drively makes requests to the Google Drive API to create/read/update your Google Drive files whenever you initiate an action to do so. The data returned from the Google Drive API is stored in memory and is never sent to a server. You can read the source code at <a target="_blank" rel="noopener noreferrer" href="https://github.com/troq/drively">https://github.com/troq/drively</a> to confirm that there is no server involved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
